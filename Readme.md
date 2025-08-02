@@ -7,7 +7,7 @@ This is a microservice that verifies access tokens for a given user in [WorkOS](
 Add the following to your `.env` or to the environment variables of your deployment (replacing the `<client_id>` with your actual WorkOS client ID):
 
 ```
-GET https://api.workos.com/sso/jwks/<client_id>
+JWKS_CLIENT_ID=<client_id>
 ```
 
 > You have to add this url to https://fga.workos.com/configuration. FGA is the WorkOS service that provides the necessary configuration for access token verification.
